@@ -149,32 +149,97 @@ public class Exam2 {
 		
    
    // 나기업
+//		String [] menu = {"품절","빅맥", "타코", "백반"};
+//	    out:
+//	    while(true) {
+//	    	System.out.println("원하는 메뉴를 선택하세요 0)품절 1)빅맥  2)타코  3)백반");
+//	    	Scanner sc = new Scanner(System.in);
+//	    	int i = sc.nextInt();
+//	    	if(i > 3) {
+//	    	System.out.println("메뉴를 잘못선택하셨습니다");
+//	    	continue;
+//	    	}	    		
+//	    	System.out.println("선택하신 메뉴는" + menu[i]);
+//	    	if (i == 0) {
+//	    		System.out.println("프로그램을 종료합니다");
+//	    		break out;
+//
+//	    	}
+//   
+//	    }
    
-		String [] menu = {"품절","빅맥", "타코", "백반"};
-	    out:
-	    while(true) {
-	    	System.out.println("원하는 메뉴를 선택하세요 0)품절 1)빅맥  2)타코  3)백반");
-	    	Scanner sc = new Scanner(System.in);
-	    	int i = sc.nextInt();
-	    	if(i > 3) {
-	    	System.out.println("메뉴를 잘못선택하셨습니다");
-	    	continue;
-	    	}	    		
-	    	System.out.println("선택하신 메뉴는" + menu[i]);
-	    	if (i == 0) {
-	    		System.out.println("프로그램을 종료합니다");
-	    		break out;
+		//서민성
+		
+//		while(true) {
+//			System.out.println("원하는 메뉴를 선택하세요");
+//			System.out.println("메뉴선택");
+//			System.out.println("1)빅맥");
+//			System.out.println("2)팝콘");
+//			System.out.println("3)백반");
+//			Scanner sc = new Scanner(System.in);
+//			int menu = sc.nextInt();
+//			
+//			if (menu == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break ;
+//			}
+//			if(menu <0 || menu >3){
+//				System.out.println("메뉴를 잘못 선택하셨습니다(종료:0)");
+//			}
+//			
+//			if( menu <= 3) {
+//				System.out.printf("선택하신 메뉴는 %d번 입니다%n", menu);
+//				//continue;
+//			}
+//	
+//		}
+		
+		
+//이지은
+		
+//		Scanner sc = new Scanner(System.in);
+//		String msg= "1)빅맥\n2)타코\n3)백반\n원하는 메뉴를 선택하세요(종료:0)";
+//		int ans;
+//		while (true) {
+//			System.out.println(msg);
+//			ans = sc.nextInt();
+//			
+//			if (ans==0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			}
+//			else if (ans<=3) {
+//				System.out.println("선택하신 메뉴는"+ ans +"번 입니다.");
+//				//continue;
+//			}
+//			else {
+//				System.out.println("메뉴를 잘 못 선택하셨습니다.");
+//			}
+//		}
 
-	    	}
-   
-	    }
-   
 		
-		
-		
-		
-		
-		
+		//민병현
+		stop:
+        while (true){
+            System.out.println("1.빅맥");
+            System.out.println("2.타코");
+            System.out.println("3.백반");
+
+            System.out.println("메뉴를 선택하세요(0번은 종료)");
+            Scanner sc = new Scanner(System.in);
+            int choice = sc.nextInt();
+            switch (choice) {
+                case 0 : break stop;
+                case 1 : System.out.println("빅맥을 주문하였습니다"); continue;
+                case 2 : System.out.println("타코을 주문하였습니다"); continue;
+                case 3 : System.out.println("백반을 주문하였습니다"); continue;
+                default : System.out.println("없는 번호입니다");
+            }
+        }
+        System.out.println("프로그램을 종료합니다");
+    
+
+
 		
 		
 		
