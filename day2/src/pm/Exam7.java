@@ -60,7 +60,7 @@ public class Exam7 {
 		if (score > max) {
 			max = score;
 		}
-		else if(score < min) {
+		if(score < min) {
 			min = score;
 		}
 		
