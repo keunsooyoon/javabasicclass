@@ -94,35 +94,24 @@ public class Exam5 {
 //		   13  12  11    ->     11  12  13
 		   // array arraylist 사용 금지
 		
-		  Scanner sc = new Scanner(System.in);
-		  
-	      System.out.print("숫자 a 입력 >>> "); int a = sc.nextInt();
-	      System.out.print("숫자 b 입력 >>> "); int b = sc.nextInt();
-	      System.out.print("숫자 c 입력 >>> "); int c = sc.nextInt();
-//                                 13 12 11     2  3  1
-	      // a가 b보다 크면 a와 b를 교환    12 13 11     2  3  1
-	      if (a > b) {int t = a; a = b; b = t;}
-	      // b가 c보다 크면 b와 c를 교환    12 11 13     2  1  3
-	      if (b > c) {int t = b; b = c; c = t;}	      
-	      // a가 b보다  크면 a와 b를 교환   11 12 13     1  2  3
-	      if (a > b) {int t = a; a = b; b = t;}	      
+//		  Scanner sc = new Scanner(System.in);
+//		  
+//	      System.out.print("숫자 a 입력 >>> "); int a = sc.nextInt();
+//	      System.out.print("숫자 b 입력 >>> "); int b = sc.nextInt();
+//	      System.out.print("숫자 c 입력 >>> "); int c = sc.nextInt();
+////                                 13 12 11     2  3  1
+//	      // a가 b보다 크면 a와 b를 교환    12 13 11     2  3  1
+//	      if (a > b) {int t = a; a = b; b = t;}
+//	      // b가 c보다 크면 b와 c를 교환    12 11 13     2  1  3
+//	      if (b > c) {int t = b; b = c; c = t;}	      
+//	      // a가 b보다  크면 a와 b를 교환   11 12 13     1  2  3
+//	      if (a > b) {int t = a; a = b; b = t;}	      
+//	      
+//	      System.out.println(a + " " + b + " " + c);
+//		
+//	      
 	      
-	      System.out.println(a + " " + b + " " + c);
-		
-	      
-	      
-	      // 3자리의 양의 정수값 (100~999)을 읽는 프로그램을 작성하세요
-	      // 입력한 값이 3의 양의 정수가 아니면 다시 입력하게 하세요. do~ while 을 사용하세요 if는 사용 금지
-	      
-	      // 세자리의 정수 >>> 59
-	      // 세자리의 정수 >>> 2222
-	      // 세자리의 정수 >>> 333
-	      // 입력한 값은 333입니다.
-	      
-	      
-	      
-	      
-	      
+
 	}
 
 }
