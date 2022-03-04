@@ -69,6 +69,9 @@ public class Exam6 {
 //		더 작은 숫자입니다.
 //		어떤 숫자일까요?
 //		정답입니다.
+		
+	//박진욱
+		
 		Scanner sc = new Scanner(System.in);
 		Random rand = new Random();
 		
