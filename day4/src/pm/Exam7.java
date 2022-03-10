@@ -26,8 +26,8 @@ public class Exam7 {
 //		for(int i= arr1.length-1,j=0;i>=0;i--,j++) {
 //			arr2[j]=arr1[i];
 			
-			for(int i=0; i<arr1.length; i++) {
-				arr2[i] = arr1[arr1.length-1-i];
+		for(int i=0; i<arr1.length; i++) {
+			arr2[i] = arr1[arr1.length-1-i];
 
 		}
 		System.out.println(Arrays.toString(arr2));
