@@ -24,7 +24,7 @@ class T {
 	}
 	
 	T(int a) { //생성자 오버로딩
-		this();
+		this(); //생성자의 내부에서 첫번째 생성자를 호출
 		System.out.println("두번쨰 생성자");	
 	}
 }
