@@ -3,7 +3,7 @@ package pm;
 public class Exam41 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 
 		Human h = new Human();
 		h.name = "홍길동";
