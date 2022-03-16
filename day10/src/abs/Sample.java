@@ -1,17 +1,17 @@
-package am;
+package abs;
 
-interface PredatorBarkable extends Predator, Barkable {
-	
-}
+//interface PredatorBarkable extends Predator, Barkable {
+//	
+//}
 
-interface Predator{
-	String getFood();
+abstract class Predator extends Animal{
+	abstract String getFood();
 	
-	default void printFood() {
+	void printFood() {
 		System.out.printf("my food is %s\n", getFood());
 	}
 	
-	int LEG_COUNT = 4;
+	static int LEG_COUNT = 4;
 	
 	static int speed() {
 		return LEG_COUNT * 30;
@@ -32,7 +32,7 @@ class Animal {
 	}
 }
 
-class Tiger extends Animal implements PredatorBarkable{
+class Tiger extends Predator implements Barkable{
 	public String getFood() {
 		return "apple";
 	}
@@ -42,7 +42,7 @@ class Tiger extends Animal implements PredatorBarkable{
 	}
 }
 
-class Lion extends Animal implements PredatorBarkable {
+class Lion extends Predator implements Barkable {
 	public String getFood() {
 		return "banana";
 	}
