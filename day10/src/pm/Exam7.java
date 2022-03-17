@@ -1,5 +1,7 @@
 package pm;
 
+import java.io.InputStreamReader;
+
 public class Exam7 {
 
 	public static void main(String[] args) {
@@ -53,7 +55,10 @@ public class Exam7 {
 		  
   /*
    예외 처리 과정
-   
+  +
+  
+  
+  
    실제 내부적으로 예외가 처리되는 과정을 자세히 알아보자. 
    
   try{
@@ -120,19 +125,22 @@ public class Exam7 {
 		//1개의 catch() 블록으로 2개의 예외를 동시에 처리하도록 통합해보자. 둘 중 어떤 예외가 발생해도 모두
 		//하나의 예외처리로 해결할 수 있다. 
 		
-	try {
-		System.out.println(3/1);
-		int num = Integer.parseInt("10A");
-	} catch(ArithmeticException | NumberFormatException e) {
-		System.out.println("예외가 발생했습니다.");
-	} finally {
-		System.out.println("프로그램 종료");
-		
-	}
+//	try {
+//		System.out.println(3/1);
+//		int num = Integer.parseInt("10A");
+//	} catch(ArithmeticException | NumberFormatException e) {
+//		System.out.println("예외가 발생했습니다.");
+//	} finally {
+//		System.out.println("프로그램 종료");
+//		
+//	}
 	
 	//finally 는 항상 실행되는 블록이다. 그런데 또 다른 기능은 리소스를 해제하는 것이다. 
 	//리소스 해제는 더이상 사용하지 않는 자원을 반납하는 것을 의미한다. 
+	//예를 들면 파일을 열어서 사용을 한뒤에 닫아야 다른 프로그램이 이 파일을 사용할 수 있다. 
+	//finally{}블록에서 리소스를 해제하는 역할로도 사용이 된다. 
 	
+
 	
 	
 	
