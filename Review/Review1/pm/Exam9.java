@@ -3,7 +3,6 @@ package pm;
 public class Exam9 {
     /*
 클래스의 내부 구성요소 - 필드 / 매서드 / 생성자 / this this()
-
 필드 - 클래스에 포함된 변수, 객체의 속성 값을 지정할수 있다. 
     */
     public static void main(String[] args) {
@@ -16,6 +15,10 @@ public class Exam9 {
 }
 
 class A {
+
+    A() {
+    }
+    
     int m = 3; //필드 , 전역변수
     int n = 4;
 
