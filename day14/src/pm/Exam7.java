@@ -19,7 +19,7 @@ public class Exam7 {
 				aList.add(0,i);
 			}
 			endTime = System.nanoTime();
-			System.out.println("ArrayList 추가시간 = " + (endTime-startTime)/1000000 + " ns");
+			System.out.println("ArrayList 추가시간 = " + (endTime-startTime)/10000 + " ns");
 
 			
 			
@@ -29,7 +29,7 @@ public class Exam7 {
 				linkedList.add(0,i);
 			}
 			endTime = System.nanoTime();
-			System.out.println("LinkedList 추가시간 = " + (endTime-startTime)/1000000 + " ns");
+			System.out.println("LinkedList 추가시간 = " + (endTime-startTime)/10000 + " ns");
 
 			
 			startTime = System.nanoTime();
@@ -50,6 +50,23 @@ public class Exam7 {
 			System.out.println("LinkedList 검색시간 = " + (endTime-startTime)/10000 + " ns");
 
 			
+			startTime = System.nanoTime();
+			for(int i = 0 ; i < 100000 ; i++) {
+				aList.remove(0);
+			}
+			endTime = System.nanoTime();
+			System.out.println("ArrayList 삭제시간 = " + (endTime-startTime)/10000 + " ns");
+
+			
+			
+			
+			startTime = System.nanoTime();
+			for(int i = 0 ; i < 100000 ; i++) {
+				linkedList.remove(0);
+			}
+			endTime = System.nanoTime();
+			System.out.println("LinkedList 삭제시간 = " + (endTime-startTime)/10000 + " ns");
+
 			
 	}
 
