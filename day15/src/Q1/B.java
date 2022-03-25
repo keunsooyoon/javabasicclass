@@ -4,7 +4,7 @@ import pm.Exam7;
 
 class B {
 	void bcd() {
-		Exam7 a = new Exam7();
+		A a = new A();
 		System.out.println(a.   );
 	}
 }
