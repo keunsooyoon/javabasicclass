@@ -10,7 +10,7 @@ public class F {
 	}
 	
 	static void bcd() {
-		System.out.println(a);  3 //
+		System.out.println(a);  //3 static매서드는 static 변수만 객체생성 없이 가져다 쓸수 있다. 
 		//System.out.println(b);  4
 	}
 }
